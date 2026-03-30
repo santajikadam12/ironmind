@@ -1,9 +1,14 @@
-export declare const balanced: (a: string | RegExp, b: string | RegExp, str: string) => false | {
-    start: number;
-    end: number;
-    pre: string;
-    body: string;
-    post: string;
-} | undefined;
-export declare const range: (a: string, b: string, str: string) => undefined | [number, number];
-//# sourceMappingURL=index.d.ts.map
+/**
+List of binary file extensions.
+
+@example
+```
+import binaryExtensions = require('binary-extensions');
+
+console.log(binaryExtensions);
+//=> ['3ds', '3g2', …]
+```
+*/
+declare const binaryExtensions: readonly string[];
+
+export = binaryExtensions;
